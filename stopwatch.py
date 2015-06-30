@@ -71,10 +71,13 @@ def stop_handler():
         
     
 # define reset handler        
-def reset_handler():
+timer.stop()
     global count
+    global win_counts
+    global stop_counts 
     count = 0
-    timer.stop()
+    stop_counts = 0
+    win_counts = 0
      
     
     
