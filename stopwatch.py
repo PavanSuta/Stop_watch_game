@@ -27,7 +27,7 @@ def format(value):
     
     
     
-# define event handlers for buttons; "Start", "Stop", "Reset"
+
 
 
 # define event handler for timer with 0.1 sec interval
@@ -53,10 +53,11 @@ def draw(canvas):
     canvas.draw_text(no_of_win, (80, 56), 24, 'Red')
     
 
-    
+# define start handler    
 def start_handler():
     timer.start()
-    
+
+# define stop handler    
 def stop_handler():
     global hit_counts
     global stop_counts
@@ -69,7 +70,7 @@ def stop_handler():
         
         
     
-        
+# define reset handler        
 def reset_handler():
     global count
     count = 0
@@ -91,6 +92,6 @@ Resetbutton = frame.add_button('Reset', reset_handler, 100)#To reset the timer
 
 
 
-# Please remember to review the grading rubric
+
 frame.start()
 
